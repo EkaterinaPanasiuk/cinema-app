@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Diplom</title>
+</head>
+<body>
+  <div id="spa">
+        <header class="header">
+            <div class="header-title-row">
+            <h1 class="header-title">Кино</h1>
+            </div>
+            <div class="nav" class="header-nav">
+                <ul class="header-menu">
+              <li class="header-menu-item"><a href="#main" class="header-link">Главная</a></li>
+              <li class="header-menu-item"><a href="#like" class="header-link">Избранное</a></li>
+              <li class="header-menu-item"><a href="#user" class="header-link">Кaбинет пользователя</a></li>
+      
+             </ul>
+      </div>
+       
+        </header>
+        <main class="main">
+        <div class= "content-box" id = "content-box">
+
+        </div>
+        </main>
+        <footer class="footer">
+        </footer>
+
+    </div> 
+
+ 
+
+  
+   
+    <script  src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app-compat.js"></script>
+    <script  src="https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore-compat.js"></script>
+    <script  src="https://www.gstatic.com/firebasejs/9.15.0/firebase-auth-compat.js"></script>
+    <script >
+       const firebaseApp = firebase.initializeApp({ 
+                apiKey: "AIzaSyArtAQnReQwVfg2tMWzDApDntI31CSkvOo",
+                authDomain: "panasiuk29-b4ddc.firebaseapp.com",
+                projectId: "panasiuk29-b4ddc",
+                storageBucket: "panasiuk29-b4ddc.appspot.com",
+                messagingSenderId: "724256405264",
+                appId: "1:724256405264:web:82eeea856f903b110b1795",
+                measurementId: "G-7Q2KFSPXKY" });
+       const db = firebaseApp.firestore();
+       const auth = firebaseApp.auth();
+
+       
+    </script>
+      <!-- <script defer  src="./scripts/spa_wrapper.js"></script>   -->
+ <script defer  src="./scripts/script.js"></script> 
+<!--  <script defer type= "module" src="new.js"></script>  -->
+
+
+</body>
+</html>
+
